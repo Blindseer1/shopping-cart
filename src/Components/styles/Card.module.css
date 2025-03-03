@@ -1,0 +1,27 @@
+.items {
+  border: 3px solid white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.inputStyle {
+  width: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.miniContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonStyle {
+  background-color: green;
+  width: 50%;
+}

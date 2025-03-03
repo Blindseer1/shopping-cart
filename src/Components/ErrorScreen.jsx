@@ -1,5 +1,5 @@
 import styles from './styles/ErrorScreen.module.css'
-import rabbit from './funny-rabbits-sunglasses.jpg'
+import rabbit from '/funny-rabbits-sunglasses.jpg'
 export default function ErrorScreen() {
   return (
     <div className={styles.container}>
