@@ -4,8 +4,11 @@ import './index.css'
 import App from './App.jsx'
 import router from './router.jsx'
 import { RouterProvider } from 'react-router'
+import CartList from './Components/MyContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CartList>
+      <RouterProvider router={router} />
+    </CartList>
   </StrictMode>,
 )

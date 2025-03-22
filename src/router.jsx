@@ -3,6 +3,7 @@ import App from './App.jsx'
 import ErrorScreen from './Components/ErrorScreen.jsx'
 import Homepage from "./Components/Homepage.jsx";
 import Shop from "./Components/Shop.jsx"
+import Cart from "./Components/Cart.jsx"
 const router = createBrowserRouter([
   {
     path: '/',
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       { index: true, element: <Homepage /> }
     ],
     errorElement: <ErrorScreen />,
+  },
+  {
+    path: '/cart',
+    element: <Cart />
   },
 
 ])

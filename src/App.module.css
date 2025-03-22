@@ -23,3 +23,20 @@ nav {
   display: flex;
   flex-direction: column;
 }
+
+.cart {
+  width: auto;
+  height: 100%;
+}
+
+.imgContainer {
+
+  height: 80px;
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  top: 75%;
+  left: 40%;
+}
