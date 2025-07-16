@@ -13,19 +13,27 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  gap:20px;
 }
 
 .miniContainer {
   display: flex;
   flex-direction: column;
-}
-
-.buttonStyle {
-  background-color: green;
   width: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
+.addStyle {
+  background-color: green;
+  width: 90%;
+  text-align: center;
+}
+.editStyle{ 
+  background-color: steelblue;
+
+}
 .products {
   width: 70%;
   height: 100%;

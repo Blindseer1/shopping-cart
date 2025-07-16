@@ -1,3 +1,6 @@
+///TODO: prop validation 
+///TODO: deploy
+
 import { useState } from 'react'
 import { Outlet, Link } from 'react-router-dom'
 import styles from "./App.module.css"
@@ -14,7 +17,7 @@ function App() {
           <div className={styles.counter}>{counter}</div>
         </div>
       </nav>
-      <Outlet context={setCounter} />
+      <Outlet context={[counter,setCounter]} />
     </div>
   )
 }
