@@ -1,4 +1,5 @@
 import { useContext, createContext, useState } from "react";
+import PropTypes from 'prop-types'
 const CartContext = createContext();
 export function useCart() {
   const context = useContext(CartContext)
@@ -9,7 +10,7 @@ export function useCart() {
 }
 
 
-export default function CartListProvider({ children }) {
+function CartListProvider({ children }) {
   const [products, setProducts] = useState([{ count: 0, price: 0 },
   { count: 0, price: 0 },
   { count: 0, price: 0 },
@@ -26,3 +27,10 @@ export default function CartListProvider({ children }) {
     </CartContext.Provider>
   )
 }
+CartListProvider.propTypes={ 
+  children:PropTypes.node
+}
+
+
+
+export default  CartListProvider;

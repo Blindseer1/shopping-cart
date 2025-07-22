@@ -1,6 +1,6 @@
 import Card from './Card.jsx'
 import { useCart } from './MyContext.jsx'
-import { useContext, useState, useEffect } from "react"
+import {  useState, useEffect } from "react"
 import styles from './styles/Cart.module.css'
 import { useOutletContext } from 'react-router'
 
@@ -22,7 +22,7 @@ export default function Cart() {
 
         <div className="products">
         <div>Products:</div>
-        {Array.from(products).filter((product, index) => product.count > 0).map((product) => {
+        {Array.from(products).filter((product) => product.count > 0).map((product) => {
           const index = Array.from(products).indexOf(product)
           console.log(index)
           return <Card imgId={index} setCounter={setCounter}  defaultCount={product.count} key={index} buttonOption={false} />

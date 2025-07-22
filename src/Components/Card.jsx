@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react'
 import styles from './styles/Card.module.css'
 import { useCart } from './MyContext.jsx'
 import { useEffect } from 'react';
-export default function Card({ imgId,counter, setCounter, defaultCount, buttonOption }) {
+function Card({ imgId, setCounter, defaultCount, buttonOption }) {
 
   const [imageSource, setImageSource] = useState('');
   const [price, setPrice] = useState(0);
@@ -10,6 +11,8 @@ export default function Card({ imgId,counter, setCounter, defaultCount, buttonOp
   const [changeButton,setChangeButton]=useState(buttonOption);
   const [totalCount,setTotalCount]=useState(0);
   const { products, setProducts } = useCart();
+
+
 
  useEffect(()=>{ 
   if(defaultCount)
@@ -55,3 +58,15 @@ export default function Card({ imgId,counter, setCounter, defaultCount, buttonOp
     </div >
   )
 }
+
+
+Card.propTypes={
+  imgId:PropTypes.number,
+  setCounter:PropTypes.func,
+  defaultCount:PropTypes.number,
+  buttonOption:PropTypes.bool,
+
+}
+
+
+export default Card;

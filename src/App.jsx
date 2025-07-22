@@ -1,4 +1,4 @@
-///TODO: prop validation 
+///TODO: prop validation  -- done 
 ///TODO: deploy
 
 import { useState } from 'react'
